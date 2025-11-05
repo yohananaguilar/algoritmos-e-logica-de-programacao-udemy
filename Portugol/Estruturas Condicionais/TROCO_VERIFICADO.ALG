@@ -1,12 +1,12 @@
 Algoritmo "troco_verificado"
-// 
 // Professor: Nelio Alves 
 // Autor(a): Yohanan Aguilar Amaral
 // Data atual: 04/11/2025
 Var
 // Seção de Declarações das variáveis 
-   precoUnitarioProduto, quantidadeProdutosComprados: inteiro
-   dinheiroRecebido, valorCompra, troco: real
+   precoUnitarioProduto, dinheiroRecebido, troco, resto: real
+   quantidadeProdutosComprados: inteiro
+
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
    Escreva("Preço unitário do produto: ")
@@ -18,13 +18,12 @@ Inicio
    Escreva("Dinheiro recebido: ")
    Leia(dinheiroRecebido)
 
-   valorCompra <- precoUnitarioProduto * quantidadeProdutosComprados
-   troco <- dinheiroRecebido - valorCompra
-   
-   se (valorCompra > dinheiroRecebido) entao
-      Escreva("DINHEIRO INSUFICIENTE. FALTAM ", - (troco) ," REAIS")
+   se (dinheiroRecebido >= (precoUnitarioProduto * quantidadeProdutosComprados)) entao
+      troco <- dinheiroRecebido - precoUnitarioProduto * quantidadeProdutosComprados
+      Escreva("TROCO = ", troco:4:2)
    senao
-      Escreva("TROCO = ", troco)
+      resto <- precoUnitarioProduto * quantidadeProdutosComprados - dinheiroRecebido
+      Escreva("DINHEIRO INSUFICIENTE. FALTAM ", resto:4:2," REAIS")
    fimse
    
 Fimalgoritmo
