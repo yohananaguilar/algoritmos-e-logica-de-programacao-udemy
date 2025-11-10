@@ -9,26 +9,27 @@ Var
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   Escreva("Voce vai digitar a temperatura em qual escala (C/F)?")
+   Escreval("Voce vai digitar a temperatura em qual escala (C/F)?")
    Leia(escala)
    
-    se (escala = "C") entao
+   Escolha(escala)
+   
+   Caso "F"
+      Escreva("Digite a temperatura em fahrenheit: ")
+      Leia(fahrenheit)
+
+      celsius <- 5 / 9 * (fahrenheit - 32)
+
+      Escreva("Temperatura equivalente em Fahrenheit: ", celsius:4:2)
+   Caso "C"
       Escreva("Digite a temperatura em celsius: ")
       Leia(celsius)
 
-      fahrenheit <- (celsius * 1.8) + 32
+      fahrenheit <- 9 * celsius / 5 + 32
 
       Escreva("Temperatura equivalente em Fahrenheit: ", fahrenheit:4:2)
-   fimse
-
-   se (escala = "F") entao
-      Escreva("Digite a temperatura em fahrenheit: ")
-      Leia(fahrenheit)
-      
-      celsius <- (5 / 9) (fahrenheit - 32)
-      
-      Escreva("Temperatura equivalente em Fahrenheit: ", celsius:4:2)
-   fimse
-   
+   Outrocaso
+      Escreva("Escolha inválida")
+   Fimescolha
 
 Fimalgoritmo
