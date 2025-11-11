@@ -1,10 +1,10 @@
 Algoritmo "aumento"
 // Professor: Nelio Alves
 // Autor(a): Yohanan Aguilar Amaral
-// Data: 10/11/2025
+// Data: 11/11/2025
 Var
 // Seção de Declarações das variáveis 
-   salarioAtual: real
+   salarioAtual, porcentagem, aumento, novoSalario: real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
@@ -12,27 +12,23 @@ Inicio
    Leia(salarioAtual)
    
    Se (salarioAtual <= 1000) entao
-      Escreval("Novo salario = ", salarioAtual + (salarioAtual * 20/100):5:2)
-      Escreval("Aumento = ", salarioAtual * 20/100:5:2)
-      Escreval("Porcentagem = 20 %")
+      porcentagem <- 20
+   Senao
+      Se(salarioAtual <= 3000) entao
+         porcentagem <- 15
+      Senao
+         Se (salarioAtual <= 8000) entao
+            porcentagem <- 10
+         Senao
+            porcentagem <- 5
+         fimse
+      fimse
    fimse
    
-   Se (salarioAtual > 1000) e (salarioAtual <= 3000) entao
-      Escreval("Novo salario = ", salarioAtual + (salarioAtual * 15/100):5:2)
-      Escreval("Aumento = ", salarioAtual * 15/100:5:2)
-      Escreval("Porcentagem = 15 %")
-   fimse
-   
-   Se (salarioAtual > 3000) e (salarioAtual <= 8000) entao
-      Escreval("Novo salario = ", salarioAtual + (salarioAtual * 10/100):5:2)
-      Escreval("Aumento = ", salarioAtual * 10/100:5:2)
-      Escreval("Porcentagem = 10 %")
-   fimse
-   
-   Se (salarioAtual > 8000) entao
-      Escreval("Novo salario = ", salarioAtual + (salarioAtual * 5/100):5:2)
-      Escreval("Aumento = ", salarioAtual * 5/100:5:2)
-      Escreval("Porcentagem = 5 %")
-   fimse
-   
+   aumento <-  salarioAtual * porcentagem / 100
+   novoSalario <- salarioAtual + aumento
+
+   Escreval("Novo salario = R$", novoSalario:4:2)
+   Escreval("Aumento = R$", aumento:4:2)
+   Escreval("Porcentagem = ", porcentagem, "%")
 Fimalgoritmo
