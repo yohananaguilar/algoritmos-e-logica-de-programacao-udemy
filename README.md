@@ -4,33 +4,59 @@
 
 Este repositório documenta minha evolução no curso **"Algoritmos e Lógica de Programação - O Curso COMPLETO"**, ministrado pelo **Prof. Dr. Nélio Alves** (Udemy).
 
-O objetivo deste projeto é solidificar os fundamentos da **Engenharia de Software** através da resolução de problemas computacionais, focando em boas práticas de código, organização lógica e estruturas de dados.
+O objetivo deste projeto é solidificar os fundamentos da **Engenharia de Software** através da resolução de problemas computacionais. A proposta é resolver os mesmos exercícios em múltiplas linguagens para dominar a sintaxe e as particularidades de cada tecnologia.
 
 ## 🎯 Objetivos de Aprendizado
 Ao longo deste curso, estou desenvolvendo competências em:
 - **Pensamento Computacional:** Quebra de problemas complexos em etapas menores.
-- **Estruturas de Controle:** Domínio de condicionais (`se/senao`) e laços de repetição (`enquanto`, `para`).
-- **Boas Práticas:** Nomenclatura de variáveis, indentação e "Clean Code" desde a base.
-- **Depuração (Debugging):** Teste de mesa e correção de erros lógicos.
+- **Estruturas de Controle:** Domínio de condicionais (`if-else`) e laços de repetição (`while`, `for`).
+- **Estruturas de Dados:** Vetores, Matrizes e Listas.
+- **Poliglotismo na Programação:** Adaptação da lógica para diferentes sintaxes (C, Java, Python, etc.).
+- **Boas Práticas:** Clean Code, indentação e nomenclatura padrão.
 
-## 🛠️ Tecnologias e Ferramentas
-* **Linguagem:** Portugol (VisualG)
-* **IDE:** VisualG 3.0
-* **Conceitos:** Lógica Imperativa e Estruturada.
+## 🛠️ Tecnologias Utilizadas
+Este repositório contém implementações nas seguintes linguagens:
+
+| Linguagem | Foco/Uso | IDEs Utilizadas |
+|---|---|---|
+| **Portugol** (VisualG) | Base lógica e estruturada (Pseudocódigo). | VisualG 3.0 |
+| **C / C++** | Gerenciamento de memória e baixo nível. | Code::Blocks / Dev-C++ |
+| **C#** | Programação Orientada a Objetos (Microsoft). | Visual Studio |
+| **Java** | Programação Orientada a Objetos e portabilidade. | Eclipse / IntelliJ |
+| **Python** | Sintaxe concisa e produtividade. | PyCharm / VS Code |
 
 ## 📂 Estrutura do Repositório
-Os exercícios estão organizados progressivamente conforme a grade curricular do curso:
+Os exercícios estão organizados por **Linguagem** e **Tópico**:
 
-| Tópico | Descrição | Exemplos |
-|:---:|---|---|
-| **Estrutura Sequencial** | Entrada, processamento e saída de dados. | Cálculo de terrenos, geometria básica. |
-| **Estrutura Condicional** | Tomada de decisão lógica. | `GLICOSE.ALG`, `OPERADORA.ALG` (Sistemas de cobrança e saúde). |
-| **Estruturas Repetitivas** | Loops e iterações. | `TABUADA.ALG`, `FATORIAL.ALG` (Automação de cálculos). |
+```text
+/
+├── Portugol/            # Algoritmos base (VisualG)
+│   ├── Estruturas Condicionais
+│   ├── Estruturas Repetitivas
+│   └── Vetores
+├── C/                   # Implementações em C
+├── C++/                 # Implementações em C++
+├── C#/                  # Implementações em C#
+├── Java/                # Implementações em Java
+└── Python/              # Implementações em Python
 
-## 🚀 Como executar o projeto
-Para testar os algoritmos em sua máquina:
+🚀 Como executar o projeto
+Para algoritmos em Portugol:
+1. Baixe e instale o VisualG.
 
-1. Baixe e instale o [VisualG](http://visualg3.com.br/).
+2. Abra os arquivos .ALG e pressione F9.
+
+Para outras linguagens (Java, C#, Python...):
+1. Certifique-se de ter o compilador ou interpretador instalado (ex: JDK para Java, Python 3, etc.).
+
 2. Clone este repositório:
-   ```bash
-   git clone [https://github.com/SEU-USUARIO-AQUI/NOME-DO-REPO.git](https://github.com/SEU-USUARIO-AQUI/NOME-DO-REPO.git)
+git clone [https://github.com/SEU-USUARIO-AQUI/NOME-DO-REPO.git](https://github.com/SEU-USUARIO-AQUI/NOME-DO-REPO.git)
+
+3. Abra a pasta da linguagem desejada na sua IDE de preferência (VS Code, IntelliJ, Visual Studio) e execute o arquivo principal.
+
+👨‍💻 Autor
+Desenvolvido por Yohanan Aguilar, Estudante de Engenharia de Software | Centro Universitário Una
+
+Estou sempre em busca de conectar teoria acadêmica com prática de mercado.
+
+LinkedIn
