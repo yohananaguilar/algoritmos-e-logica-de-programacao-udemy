@@ -57,6 +57,9 @@ Abaixo, a lista de algoritmos já implementados em **Portugol**, organizados por
 - `TESTE_VETOR.ALG`
 - `SOMA_VETOR.ALG`
 - `NEGATIVOS.ALG`
+- `ALTURAS.ALG`
+- `MAIOR_POSICAO.ALG`
+- `NUMEROS_PARES.ALG`
 
 ---
 
