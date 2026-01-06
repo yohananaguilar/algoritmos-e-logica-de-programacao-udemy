@@ -15,3 +15,8 @@ Python/.idea/modules.xml
 Python/.idea/Python.iml
 Python/.idea/vcs.xml
 Python/main.py
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
