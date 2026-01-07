@@ -20,3 +20,6 @@ Python/main.py
 *.iws
 *.ipr
 out/
+C/Estruturas Sequenciais/Exercício 3/leitura-de-dados.exe
+*.o
+*.exe
