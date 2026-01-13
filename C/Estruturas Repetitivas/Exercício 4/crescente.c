@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+
+    printf("Digite dois numeros:\n");
+    scanf("%d\n", &X);
+    scanf("%d", &Y);
+
+    while (X != Y) {
+        if (X > Y) {
+            printf("DECRESCENTE!\n");
+        } else {
+            printf("CRESCENTE\n");
+        }
+        printf("Digite dois numeros:\n");
+        scanf("%d\n", &X);
+        scanf("%d", &Y);
+    }
+    return 0;
+}
